@@ -14,10 +14,11 @@ function add_line() {
 add_line "$HOME/.bashrc" "set -o vi"
 ### prompt
 add_line "$HOME/.bashrc" 'export PS1="\[\e[34m\]\u@\h\[\e[m\][\[\e[35m\]\w\[\e[m\]]\n$ "'
-
-## profiles
-add_line "$HOME/.profile" "export VISUAL=vim"
-add_line "$HOME/.profile" "export EDITOR=vim"
+## set default
+add_line "$HOME/.bashrc" "export VISUAL=vim"
+add_line "$HOME/.bashrc" "export EDITOR=vim"
+## vimrc
+curl https://raw.githubusercontent.com/mrdotb/provisioning/master/configs/.vimrc > "$HOME/.vimrc"
 
 ## install fzf
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
