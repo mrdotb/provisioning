@@ -8,8 +8,6 @@ Install elixr and erlang.
 __EOT__
 }
 
-if [ -z $1 ]; then usage && exit; fi
-
 set -eux
 
 cd /tmp
