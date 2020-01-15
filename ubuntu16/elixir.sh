@@ -1,13 +1,5 @@
 #!/bin/bash
 
-function usage {
-    cat << __EOT__
-Usage: docker.sh
-
-Install elixr and erlang.
-__EOT__
-}
-
 set -eux
 
 cd /tmp
